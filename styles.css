@@ -147,3 +147,40 @@ body {
 .output-itself-button:hover {
     background-color: red;
 }
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1200px) {
+    .output {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .output {
+        gap: 10px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding-inline: 20px;
+    }
+    .output {
+        padding: 0;
+        grid-template-columns: 1fr;
+    }
+    .input-form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 450px) {
+    .input-form {
+        column-gap: 0;
+    }
+    .input-itself {
+        width: 100%;
+    }
+}
